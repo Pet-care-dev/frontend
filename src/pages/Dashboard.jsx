@@ -74,11 +74,11 @@ const Dashboard = () => {
             <p>No pets added yet.</p>
           )}
 
-          <button onClick={() => navigate('/add-pet')} className="sidebar-btn">
+          {/* <button onClick={() => navigate('/add-pet')} className="sidebar-btn">
             Add Pet
           </button>
 
-          <button className="sidebar-btn">Manage Profile</button>
+          <button className="sidebar-btn">Manage Profile</button> */}
           <button
             className="sidebar-btn logout"
             onClick={() => {
@@ -94,8 +94,13 @@ const Dashboard = () => {
       {/* Main Cards */}
       <div className="cards">
         <div className="card">
+        <a
+        href="http://localhost:5173"
+        target=""
+        rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/3047/3047486.png" alt="Find vets" />
           <p className="label">Find vets</p>
+          </a>
         </div>
         <div className="card">
         <a
@@ -107,14 +112,19 @@ const Dashboard = () => {
         </a>
         </div>
         <div className="card">
+        <a
+        href="http://localhost:3001"
+        target=""
+        rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Adopt a pet" />
           <p className="label">Adopt a pet</p>
+          </a>
         </div>
       </div>
 
       {/* Footer */}
       <footer className="footer">Find everything your furry friend needs!</footer>
-      <div className="page-number">3</div>
+      {/* <div className="page-number">3</div> */}
     </div>
   );
 };
